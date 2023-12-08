@@ -1,11 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { MetaDataLike } from "./types/props";
+import { MetaDataLike } from "./types/global";
 import Heads from "./components/Layouts/Heads";
+import { ThemeProvider } from "./components/Layouts/Theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const siteName = "Nissmicl Offical Site";
+const siteName = "Nissmick Offical Site";
 const description = "Next generation Chat app";
 const url = "https://nissmick.net";
 
@@ -15,6 +16,11 @@ export const metadata: MetaDataLike = {
 		template: `%s - ${siteName}`
 	},
 	description,
+    icons: [{
+        rel: "icon shortcut apple-touch-icon",
+        type: "image/x-icon",
+        href: "/favicon.ico"
+    }],
 	openGraph: {
 		title: siteName,
 		description,
@@ -45,13 +51,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Heads {...metadata} />
 			</head>
 			<body className={inter.className}>
-				<div
-					id="__nuxt"
-					style={{
-						display: "container"
-					}}>
-					{children}
-				</div>
+				<ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+					<div
+						id="__nuxt"
+						style={{
+							display: "container"
+						}}>
+						{children}
+					</div>
+				</ThemeProvider>
 			</body>
 		</html>
 	);

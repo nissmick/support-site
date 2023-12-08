@@ -1,5 +1,5 @@
 import { NextSeo } from "next-seo";
-import { MetaDataLike } from "../../types/props";
+import { MetaDataLike } from "../../types/global";
 
 export default function Heads(metadata: MetaDataLike) {
 	return (
