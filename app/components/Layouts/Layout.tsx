@@ -5,7 +5,9 @@ export default function Layout(props: LayoutProps) {
 	return (
 		<div>
 			<Header />
-			{props.children}
+			<div className="w-screen min-h-screen">
+                {props.children}
+            </div>
 		</div>
 	);
 }
