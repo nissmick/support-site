@@ -16,11 +16,13 @@ export const metadata: MetaDataLike = {
 		template: `%s - ${siteName}`
 	},
 	description,
-    icons: [{
-        rel: "icon shortcut apple-touch-icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
-    }],
+	icons: [
+		{
+			rel: "icon shortcut apple-touch-icon",
+			type: "image/x-icon",
+			href: "/favicon.ico"
+		}
+	],
 	openGraph: {
 		title: siteName,
 		description,
