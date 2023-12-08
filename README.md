@@ -8,6 +8,9 @@ yarn dev
 
 pnpm i
 pnpm dev
+
+bun
+bun dev
 ```
 
 PR前は必ず
@@ -15,4 +18,6 @@ PR前は必ず
 yarn format
 
 pnpm format
+
+bun format
 ```
