@@ -23,9 +23,7 @@ export default function Card(
 	);
 
 	return (
-		<div
-			className={"w-full px-5 flex items-center justify-around " + (props.type === 0 ? "card-x" : "")}
-        >
+		<div className={"w-full px-5 flex items-center justify-around " + (props.type === 0 ? "card-x" : "")}>
 			{props.type === 0 ? (
 				<>
 					{icon}
