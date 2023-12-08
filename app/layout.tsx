@@ -37,7 +37,7 @@ export const metadata: MetaDataLike = {
 	alternates: {
 		canonical: url
 	},
-	icons: []
+	metadataBase: new URL(url)
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
