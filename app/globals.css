@@ -7,6 +7,16 @@ body {
     overflow-x: none;
 }
 
+/* prefix-x */
+
+.card-x {
+    backdrop-filter: brightness(0.95) contrast(95%);    
+}
+
+.dark .card-x {
+    backdrop-filter: brightness(1.05) contrast(105%);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
