@@ -7,14 +7,14 @@ export default function Card(
 	}
 ) {
 	const icon = (
-		<div className="w-1/2 flex justify-center items-center">
+		<div className="w-1/2 hidden md:flex justify-center items-center">
 			<Image src={props.icon} alt="Cover" height="300" width="300" />
 		</div>
 	);
 
 	const description = (
-		<div className="w-1/2 flex flex-col items-center">
-			<h4 className="text-xl font-bold">{props.title}</h4>
+		<div className="w-screen py-5 md:py-1 md:w-1/2 flex flex-col items-center">
+			<h4 className="text-lg sm:text-xl font-bold">{props.title}</h4>
 			<h5
 				dangerouslySetInnerHTML={{
 					__html: props.description
