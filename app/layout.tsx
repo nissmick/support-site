@@ -16,13 +16,6 @@ export const metadata: MetaDataLike = {
 		template: `%s - ${siteName}`
 	},
 	description,
-	icons: [
-		{
-			rel: "icon shortcut apple-touch-icon",
-			type: "image/x-icon",
-			href: "/favicon.ico"
-		}
-	],
 	openGraph: {
 		title: siteName,
 		description,
@@ -43,13 +36,14 @@ export const metadata: MetaDataLike = {
 	},
 	alternates: {
 		canonical: url
-	}
+	},
+	icons: []
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="ja">
-			<head>
+			<head prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
 				<Heads {...metadata} />
 			</head>
 			<body className={inter.className}>

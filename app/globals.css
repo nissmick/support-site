@@ -1,7 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: none;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

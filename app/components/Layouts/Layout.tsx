@@ -3,11 +3,9 @@ import Header from "./Header";
 
 export default function Layout(props: LayoutProps) {
 	return (
-		<div>
+		<div className="w-full min-h-screen">
 			<Header />
-			<div className="w-screen min-h-screen">
-                {props.children}
-            </div>
+			<div className="">{props.children}</div>
 		</div>
 	);
 }
