@@ -27,7 +27,7 @@ export default function Home() {
 		<Layout>
 			<div className="w-full h-[500px] flex justify-around items-center">
 				<Image src="/cover.png" alt="Cover" height="400" width="400" className="absolute z-1 md:static block" />
-				<div className="md:pr-5 relative z-2 bg-white p-5 rounded-lg md:bg-none">
+				<div className="md:pr-5 relative z-2 bg-white dark:bg-black p-5 rounded-lg md:bg-none">
 					<h2 className="text-5xl font-bold">Nissmick</h2>
 					<h3>Next generaton Chat Application</h3>
 				</div>

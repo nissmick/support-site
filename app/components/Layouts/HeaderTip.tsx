@@ -11,7 +11,7 @@ export default function HeaderTop(props: {
 	title: string;
 	tips: {
 		title: string;
-		path: `/${string}`;
+		path: string;
 	}[];
 }) {
 	return (

@@ -2,10 +2,12 @@ import ThemeToggle from "./ThemeToggle";
 import Image from "next/image";
 import HeaderTip from "./HeaderTip";
 
-const pages = [{
-    title: "Blog & News",
-    path: "/articles"
-}]
+const pages = [
+	{
+		title: "Blog & News",
+		path: "/articles"
+	}
+];
 
 export default function Header() {
 	return (
