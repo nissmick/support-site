@@ -6,6 +6,7 @@ import {
 	DropdownMenuSeparator,
 	DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button"
 
 export default function HeaderTop(props: {
 	title: string;
@@ -17,7 +18,7 @@ export default function HeaderTop(props: {
 	return (
 		<div className="">
 			<DropdownMenu>
-				<DropdownMenuTrigger className="border-none outline-none">{props.title}</DropdownMenuTrigger>
+				<DropdownMenuTrigger className="border-none outline-none"><Button variant="outline">{props.title}</Button></DropdownMenuTrigger>
 				<DropdownMenuContent>
 					<DropdownMenuLabel>{props.title}</DropdownMenuLabel>
 					<DropdownMenuSeparator />

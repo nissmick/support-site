@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const siteName = "Nissmick Offical Site";
 const description = "Next generation Chat app";
-const url = "https://nissmick.net";
+const url = "https://nissmick.com";
 
 export const metadata: MetaDataLike = {
 	title: {

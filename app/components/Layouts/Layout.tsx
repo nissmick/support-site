@@ -6,7 +6,7 @@ export default function Layout(props: LayoutProps) {
 	return (
 		<div className="w-full min-h-screen">
 			<Header />
-			<div className="">{props.children}</div>
+			<div className="min-h-[90vh]">{props.children}</div>
 			<Footer />
 		</div>
 	);
